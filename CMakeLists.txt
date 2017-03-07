@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Tracker )
+set(OpenCV_DIR "C:/opencv3/opencv/build/")
+find_package( OpenCV REQUIRED )
+add_executable( Tracker Source.cpp )
+target_link_libraries( Tracker ${OpenCV_LIBS} )
